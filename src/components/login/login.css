@@ -1,0 +1,56 @@
+.login-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+  }
+  
+  .login-input[type="text"], input[type="password"] {
+    
+        width: 90%; /* Thay đổi chiều rộng của thanh nhập */
+        padding: 20px;
+        margin: 20px auto 10px; /* Căn giữa với margin auto */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-button:hover {
+    background: darkblue;
+  }
+  
+  .login-message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .register-button {
+    
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .register-button:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,72 @@
+.login-container {
+    background-color: #FFF8DB; /* Màu nền của khung đăng nhập */
+    border-radius: 0px; /* Không bo tròn góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nhẹ cho khung */
+    width: 600px; /* Chiều rộng của khung đăng nhập */
+    height: 340px; /* Chiều cao của khung đăng nhập */
+    text-align: center; /* Căn giữa văn bản bên trong theo chiều ngang */
+    position: absolute; /* Định vị tuyệt đối khung đăng nhập */
+    top: 50%; /* Căn giữa theo chiều dọc của màn hình */
+    left: 50%; /* Căn giữa theo chiều ngang của màn hình */
+    transform: translate(-50%, -50%); /* Dịch chuyển để căn giữa tuyệt đối khung */
+}
+
+.login-header {
+    background-color: #134B70;
+    color: white;
+    padding: 15px 0; /* Khoảng cách trên và dưới của chữ trong header */
+    font-size: 28px; /* Kích thước chữ */
+    font-family: 'Roboto', sans-serif; /* Sử dụng font Roboto cho tiêu đề */
+    font-weight: bold; /* Để chữ in đậm */
+    text-shadow: 0px 4px 4px #00000040;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Chiếm toàn bộ chiều rộng của khung đăng nhập */
+  z-index: 1; /* Đặt z-index để phần header nằm trên các phần tử khác */
+}
+
+.Login-form {
+    position: relative; /* Để nút đăng nhập có thể được căn chỉnh đúng */
+    margin-top: 60px; /* Đảm bảo form không bị đẩy lên bởi header */
+    padding: 20px; /* Padding để đảm bảo khoảng cách giữa các trường nhập liệu và viền khung đăng nhập */
+}
+
+.Login-input[type="text"], input[type="password"] {
+    width: 90%; /* Thay đổi chiều rộng của thanh nhập */
+    padding: 20px;
+    margin: 20px auto 10px; /* Căn giữa với margin auto */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.Login-button {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #134B70;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.login-error-message {
+    color: red;
+    font-size: 14px; /* Kích thước chữ */
+    margin-top: 10px; /* Khoảng cách từ trường nhập liệu */
+    text-align: center; /* Căn giữa */
+    position: absolute;
+    bottom: -15px; /* Khoảng cách từ dưới lên để nằm ngang với nút đăng nhập */
+    left: 50px; /* Căn giữa theo chiều ngang */
+}
