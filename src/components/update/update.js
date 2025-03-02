@@ -22,7 +22,7 @@ const UpdatePassword = () => {
 
       // Gọi API để kiểm tra tài khoản
       const response = await axios.get(
-        "http://ec2-47-129-42-169.ap-southeast-1.compute.amazonaws.com:8080/api/v1/identity/user",
+        "http://ec2-13-250-208-51.ap-southeast-1.compute.amazonaws.com:8080/api/v1/identity/user",
         {
           params: {
             username: search
@@ -59,7 +59,7 @@ const UpdatePassword = () => {
     try {
       // Gọi PUT API để cập nhật mật khẩu
       const response = await axios.put(
-        "http://ec2-47-129-42-169.ap-southeast-1.compute.amazonaws.com:8080/api/v1/identity/user",
+        "http://ec2-13-250-208-51.ap-southeast-1.compute.amazonaws.com:8080/api/v1/identity/user",
         {
           username: search,
           password: newPassword
@@ -90,7 +90,7 @@ const UpdatePassword = () => {
 
     try {
       // Gọi DELETE API để xóa tài khoản
-      const response = await axios.delete(`http://ec2-47-129-42-169.ap-southeast-1.compute.amazonaws.com:8080/api/v1/identity/user/${search}`);
+      const response = await axios.delete(`http://ec2-13-250-208-51.ap-southeast-1.compute.amazonaws.com:8080/api/v1/identity/user/${search}`);
 
       console.log("Delete Account Response:", response);
 

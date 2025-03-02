@@ -18,7 +18,7 @@ const LoginPage = () => {
       });
 
       const response = await axios.post(
-        "http://ec2-47-129-42-169.ap-southeast-1.compute.amazonaws.com:8080/api/v1/identity/login",
+        "http://ec2-13-250-208-51.ap-southeast-1.compute.amazonaws.com:8080/api/v1/identity/login",
         {
           username: username,
           password: password,
